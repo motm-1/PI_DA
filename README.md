@@ -30,6 +30,45 @@ Key parameter for elaborating possible KPI's.
 This column is also a key parameter in the development of KPI's.
 
 - *Fatalities* Crew : Number of crew members who died in the accident (float).
-This column is required by the Henry team to create a specific KPI called "Crew Fatality Rate".
+This column is required by the Henry team to create a specific metric called "Crew Fatality Rate".
 
-The libraries utilized for this project are listed in the file requeriments.txt.
+The ETL and EDA process was made in Python. The libraries utilized for this project are listed in the file requeriments.txt.
+
+After a depth analysis of the information, the conclusions are reduced to a dashboard that consists of 3 pages:
+
+In the first one we can see the total amount of affected flights and humans in a certain period of time.
+The objective of this page is to understand where is the root of the problem and how it's affecting us today.
+Yo can see that a big amount of the crashes are concentrated between the years 1940 (when the comercial aviation started to get popular) and 2000, with a total of 3736 crashes, 76% of the total take place in 52% of the amount of time that we have measured.
+What does this mean? This mean that today, the problem that we're facing is not the amount of crashes, that's a problem of the past.
+When i saw this, i started to investigate what information could be useful to define our goal, but before show you the indicator that i chose to measure our progress towards that goal i want to you to see the information that i analyse to get to that conclusion.
+
+<p align="center">
+<img src="_src/images/img_1.png"  height=450>
+</p>
+
+In this page of the dashboard, we have different charts in which i filtered the data by the most important variables to see if there are any countries, operators or aircrafts that can be useful to understand the behaviour of the fatalities and crashes.
+What i've found is that:
+U.S.A accumulate the higher number of fatalities and crashes, also is the country most present in crashes occured in military operations.
+Russia is the second country in this ranking.
+Aeroflot is the worst Airline from the past century in number of fatalities, but you dont need to worry about that today because they only had one crash since 1997
+The aircraft with the higher number of fatalities, by far is the Douglas DC-3, but i won't affirm that it's a bad aircraft because it was one of the most popular and we don't have the total amount of flights that were made with this aircraft, so, we can't calculate how often the ratio between crashes and succesful flights. Also, this aircraft was used for military operations across the world, where the conditions might be favorable for a crash.
+Another thing that caught my atention was that 29% of the accidents were related to climatic reasons as Storms, Rains, Tornados or Fog, that could be an useful metric to define our goals, but the one that i've chose is The survival rate.
+
+<p align="center">
+<img src="_src/images/img_2.png"  height=450>
+</p>
+
+I chose this metric because the crashes and fatalities have a marked downtrend but the survival rate isn't going that well, so, in order to improve the security of the flights, is a good idea to take care of this metric.
+The KPI that i've proposed is:
+Evaluate the 20% improvement in the survival rate in the last year compared to the previous year.
+As you can see in the metrics, the 2022 the goal has been achieved but it's something that we need to pay attention closely.
+
+This second KPI was proposed by the Henry Team:
+Evaluate the 10% decrease in the Fatality Crew Ratio in the last decade compared to the previous decade.
+We can see in the graphs that only 3 decades of 11 (without counting the first) reaches the goal.
+
+<p align="center">
+<img src="_src/images/img_3.png"  height=450>
+</p>
+
+What this analysis shows is that the challenge for the next years is to introduce new security measures to improve the survival rate and at least mantain the ongoig trend in the amount of crashes
