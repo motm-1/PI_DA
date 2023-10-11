@@ -1,5 +1,7 @@
 # <h1 align=center> **Individual Project DA** </h1>
-
+<p align="center">
+<img src="./src/images/banner.jpg"  height=400 width=600>
+</p>
 
 # <h2> **Introduction and Objectives of the project** </h2>
 This project is based in data about airplanes crashes arround the world from 1908 to 2021 that the Henry Team provided me, the original dataset contains 5008 rows and 18 columns, but, for this project, i'll use only 8 of the original columns and i'll add new rows with the accidents that ocurred after the 09/21/2021 and before 2023.
