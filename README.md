@@ -39,7 +39,7 @@ This column is also a key parameter in the development of KPI's.
 This column is required by the Henry team to create a specific metric called "Crew Fatality Rate".
 
 - *Summary* : Description and information abount the crash (object).
-This column is useful for classifying crashes according to their cause.
+This column is useful to classify crashes depending on their cause.
 
 The [ETL](https://github.com/motm-1/PI_DA/blob/main/transformations.ipynb) and [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) process was made in Python. The libraries used for this project are listed in the file [requeriments.txt](https://github.com/motm-1/PI_DA/blob/main/requeriments.txt).
 
