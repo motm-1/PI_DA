@@ -4,7 +4,7 @@
 </p>
 
 # <h2> **Introduction and Objectives of the project** </h2>
-This project is based in data about airplanes crashes arround the world from 1908 to 2021 that the Henry Team provided me, the original dataset contains 5008 rows and 18 columns, but, for this project, i'll use only 8 of the original columns and i'll add new rows with the accidents that ocurred after the 09/21/2021 and before 2023.
+This project is based in data about airplanes crashes arround the world from 1908 to 2021 that the Henry Team provided me, the original dataset contains 5008 rows and 18 columns, but, for this project, i'll use only 9 of the original columns and i'll add new rows with the accidents that ocurred after the 09/21/2021 and before 2023.
 
 The objective is to analyse and comprehend in depth the relationship between the number of accidents and fatalities and the variables, in order to identify possible improvements that could be implemented to reduce the number of accidents and fatalities.
 It might also be interesting to identify what needs to be considered if you want to have the safest possible flight from a probabilistic perspective.
@@ -35,10 +35,13 @@ Key parameter for elaborating possible KPI's.
 - *Fatalities* : Number of people who died in the accident (float).
 This column is also a key parameter in the development of KPI's.
 
-- *Fatalities* Crew : Number of crew members who died in the accident (float).
+- *Fatalities Crew* : Number of crew members who died in the accident (float).
 This column is required by the Henry team to create a specific metric called "Crew Fatality Rate".
 
-The [ETL](https://github.com/motm-1/PI_DA/blob/main/transformations.ipynb) and [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) process was made in Python. The libraries utilized for this project are listed in the file [requeriments.txt](https://github.com/motm-1/PI_DA/blob/main/requeriments.txt).
+- *Summary* : Description and information abount the crash (object).
+This column is useful for classifying crashes according to their cause.
+
+The [ETL](https://github.com/motm-1/PI_DA/blob/main/transformations.ipynb) and [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) process was made in Python. The libraries used for this project are listed in the file [requeriments.txt](https://github.com/motm-1/PI_DA/blob/main/requeriments.txt).
 
 # <h2> **Dashboard and KPI'S Explained** </h2>
 
@@ -67,12 +70,15 @@ What i've found is that:
 </p>
 
 I've chosen this metric because crashes and fatalities are on a clear downward trend, but the survival rate is not on the same path, so it's a good idea to look at this metric to improve flight safety.
-The KPI i've proposed is:
-Evaluate the 20% improvement in the survival rate in the last year compared to the previous year.
+
+**The KPI i've proposed is**:
+- Evaluate the 20% improvement in the survival rate in the last year compared to the previous year.
+
 As you can see from the metrics, the goal was achieved in 2022 the but it's something that we need to pay close attention to because it can easily go up again.
 
-This second KPI was suggested by the Henry team:
-Evaluate the 10% reduction in the Fatality Crew Ratio over the last decade compared to the previous decade.
+**This second KPI was suggested by the Henry team**:
+- Evaluate the 10% reduction in the Fatality Crew Ratio over the last decade compared to the previous decade. (the fatality crew ratio is defined as the total number of members from the crew that survived over the number of crashes for a given period of time).
+
 We can see from the graphs that only 3 out of 11 decades (not counting the first) have reached the target.
 
 <p align="center">
@@ -83,5 +89,8 @@ What this analysis shows is that the challenge for the next few years is to intr
 
 # <h2> **Additional Information** </h2>
 
-If you want to see the full analysis, you can visit the [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) archive, where I explain in detail the discoveries I've haad.
+If you want to see the full analysis, you can visit the [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) archive, where I explain in detail the discoveries I've had.
+
 [Original Dataset](https://github.com/motm-1/PI_DA/blob/main/src/datasets/AccidentesAviones.csv)
+
+[Dashboard](https://github.com/motm-1/PI_DA/blob/main/dashboard.pbix)
