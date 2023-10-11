@@ -47,35 +47,41 @@ After analysing the information in depth, the conclusions were reduced to a thre
 On the first page, we can see the total number of flights and people affected in a given period of time.
 The aim of this page is to understand where the root of the problem is and how it's affecting us today.
 You can see that a large number of crashes are concentrated between the years 1940 (when commercial aviation started to become popular) and 2000, with a total of 3736 crashes, 76% of the total, taking place in 52% of the time that we have measured.
-It means that the problem we face today is not the number of accidents, that's a problem of the past.
-When I saw this, I started to investigate what problem we need to solve now and what indicators might be useful to define the steps we take towards our goal, but before I show you the indicator I've chosen to measure our progress towards this goal, I want you to see the information I analysed to reach this conclusion.
+It means that the main problem we face today is not the number of accidents, maybe that's a problem of the past.
+When I saw this, I started to investigate what problem we need to solve now and what indicators might be useful to define the steps we take to solve it, but before I show you the indicator I've chosen to measure our progress towards this goal, I want you to see the information I analysed to reach this conclusion.
 
 <p align="center">
-<img src="src/images/img_1.png"  height=450>
+<img src="src/images/img_1.png"  height=400>
 </p>
 
 On this page of the dashboard we have various graphs in which I have filtered the data by the main variables to see if there are any countries, operators or aircraft that can be useful in understanding the behaviour of fatalities and crashes.
 What i've found is that:
-The USA accumulates the highest number of fatalities and crashes, and is also the country with the highest number of crashes in military operations and Russia is the second country in this ranking.
-Aeroflot is the worst airline of the past century in terms of the number of fatalities, but there's no need to worry about it today has it has had only one crash since 1997.
-The aircraft with the highest number of fatalities by far is the Douglas DC-3, but I won't say it's a bad aircraft because it was one of the most popular and we don't have the total number of flights made with this aircraft, so we can't calculate the ratio of crashes to successful flights. Also, this aircraft was used for military operations all over the world, where conditions could be favourable for a crash.
-Another thing that caught my attention was that 29% of the accidents were related to climatic reasons such as storms, rain, tornadoes or fog, which could be a useful metric to define our goals, but the one I've chosen is the survival rate.
+- The fatality rate for a crash is 72%, which means that 7 out of 10 times that someone is present in a plane crash, their fate is to die there.
+- The USA accumulates the highest number of fatalities and crashes, and is also the country with the highest number of crashes in military operations, Russia is the second country in this ranking.
+- Aeroflot is the worst airline of the past century in terms of the number of fatalities, but there's no need to worry about it today has it has had only one crash since 1997.
+- The aircraft with the highest number of fatalities by far is the Douglas DC-3, but I won't say it's a bad aircraft because it was one of the most popular and we don't have the total number of flights made with this aircraft, so we can't calculate the ratio of crashes to successful flights. Also, this aircraft was used for military operations all over the world, where conditions could be favourable for a crash.
+- Another thing that caught my attention was that 29% of the accidents were related to climatic reasons such as storms, rain, tornadoes or fog, which could be a useful metric to define our goals, but the one I've chosen is the survival rate. The survival rate is the opposite of the fatality rate and is defined as the number of survivors over the number of people aboard in an aircraft crash.
 
 <p align="center">
-<img src="src/images/img_2.png"  height=450>
+<img src="src/images/img_2.png"  height=400>
 </p>
 
-I've chosen this metric because crashes and fatalities are on a clear downward trend, but the survival rate is not so good, so it's a good idea to look at this metric to improve flight safety.
+I've chosen this metric because crashes and fatalities are on a clear downward trend, but the survival rate is not on the same path, so it's a good idea to look at this metric to improve flight safety.
 The KPI i've proposed is:
 Evaluate the 20% improvement in the survival rate in the last year compared to the previous year.
-As you can see from the metrics, the goal was achieved in 2022 the but it's something that we need to pay close attention to.
+As you can see from the metrics, the goal was achieved in 2022 the but it's something that we need to pay close attention to because it can easily go up again.
 
 This second KPI was suggested by the Henry team:
 Evaluate the 10% reduction in the Fatality Crew Ratio over the last decade compared to the previous decade.
 We can see from the graphs that only 3 out of 11 decades (not counting the first) have reached the target.
 
 <p align="center">
-<img src="src/images/img_3.png"  height=450>
+<img src="src/images/img_3.png"  height=400>
 </p>
 
 What this analysis shows is that the challenge for the next few years is to introduce new safety measures to improve the survival rate and at least maintain the current trend in the number of accidents.
+
+# <h2> **Additional Information** </h2>
+
+If you want to see the full analysis, you can visit the [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) archive, where I explain in detail the discoveries I've haad.
+[Original Dataset](https://github.com/motm-1/PI_DA/blob/main/src/datasets/AccidentesAviones.csv)
