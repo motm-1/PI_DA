@@ -43,7 +43,7 @@ What does this mean? This mean that today, the problem that we're facing is not 
 When i saw this, i started to investigate what information could be useful to define our goal, but before show you the indicator that i chose to measure our progress towards that goal i want to you to see the information that i analyse to get to that conclusion.
 
 <p align="center">
-<img src="_src/images/img_1.png"  height=450>
+<img src="src/images/img_1.png"  height=450>
 </p>
 
 In this page of the dashboard, we have different charts in which i filtered the data by the most important variables to see if there are any countries, operators or aircrafts that can be useful to understand the behaviour of the fatalities and crashes.
@@ -55,7 +55,7 @@ The aircraft with the higher number of fatalities, by far is the Douglas DC-3, b
 Another thing that caught my atention was that 29% of the accidents were related to climatic reasons as Storms, Rains, Tornados or Fog, that could be an useful metric to define our goals, but the one that i've chose is The survival rate.
 
 <p align="center">
-<img src="_src/images/img_2.png"  height=450>
+<img src="src/images/img_2.png"  height=450>
 </p>
 
 I chose this metric because the crashes and fatalities have a marked downtrend but the survival rate isn't going that well, so, in order to improve the security of the flights, is a good idea to take care of this metric.
@@ -68,7 +68,7 @@ Evaluate the 10% decrease in the Fatality Crew Ratio in the last decade compared
 We can see in the graphs that only 3 decades of 11 (without counting the first) reaches the goal.
 
 <p align="center">
-<img src="_src/images/img_3.png"  height=450>
+<img src="src/images/img_3.png"  height=450>
 </p>
 
 What this analysis shows is that the challenge for the next years is to introduce new security measures to improve the survival rate and at least mantain the ongoig trend in the amount of crashes
