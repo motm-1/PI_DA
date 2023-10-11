@@ -9,7 +9,7 @@ This project is based in data about airplanes crashes arround the world from 190
 The objective is to analyse and comprehend in depth the relationship between the number of accidents and fatalities and the variables, in order to identify possible improvements that could be implemented to reduce the number of accidents and fatalities.
 It might also be interesting to identify what needs to be considered if you want to have the safest possible flight from a probabilistic perspective.
 
-Once the data is fully understood and depured, i need to accompany the analysis with a dashborad with charts that explain the behaviour of the data in order to define KPIs that facilitate the alignment of our actions today with our goals in the future.
+Once the data is fully understood and depured, I need to accompany the analysis with a dashboard of charts that explain the behaviour of the data in order to define KPIs that facilitate the alignment of our actions today with our goals in the future.
 
 The dataset doesn't come with a dictionary, but I've made one for you.
 Here are the columns from the original dataset that I've chosen for this project, what they mean and why I chose them:
@@ -41,7 +41,7 @@ This column is required by the Henry team to create a specific metric called "Cr
 - *Summary* : Description and information abount the crash (object).
 This column is useful to classify crashes depending on their cause.
 
-The [ETL](https://github.com/motm-1/PI_DA/blob/main/transformations.ipynb) and [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) process was made in Python. The libraries used for this project are listed in the file [requeriments.txt](https://github.com/motm-1/PI_DA/blob/main/requeriments.txt).
+You can see the [ETL](https://github.com/motm-1/PI_DA/blob/main/transformations.ipynb) and [EDA](https://github.com/motm-1/PI_DA/blob/main/eda.ipynb) process in depth in those archives. The project was made in Python and PowerBI. The libraries used for this project are listed in the file [requeriments.txt](https://github.com/motm-1/PI_DA/blob/main/requeriments.txt).
 
 # <h2> **Dashboard and KPI'S Explained** </h2>
 
